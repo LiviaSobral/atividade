@@ -1,0 +1,12 @@
+com\mycompany\taskmanager\dao\TaskDAO.class
+com\mycompany\taskmanager\view\TaskList.class
+com\mycompany\taskmanager\controller\UserController.class
+com\mycompany\taskmanager\view\UserLogin.class
+com\mycompany\taskmanager\model\User.class
+com\mycompany\taskmanager\view\UserLogin$1.class
+com\mycompany\taskmanager\model\Task.class
+com\mycompany\taskmanager\view\TaskList$1.class
+com\mycompany\taskmanager\TaskManager.class
+com\mycompany\taskmanager\dao\UserDAO.class
+com\mycompany\taskmanager\database\ConnectionSQL.class
+com\mycompany\taskmanager\controller\TaskController.class
