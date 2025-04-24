@@ -18,15 +18,20 @@ public class TaskController {
     private static ArrayList<Task> userTasks = new ArrayList<>();
     
     public static boolean registerTask(String title,String description,String strDate, int userID){
-        java.util.Date date1;
+            //instanciei a data tipo java.util.Date
+            java.util.Date date1;
+            //formato da data 
             SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
-            try{                
+            try{
+            //isso lança uma exceção para caso o usuario escreva algo que não é uma data, passa string para Java.util.date
             date1 = sdf.parse(strDate);
             }catch(ParseException e){
                 System.out.println("Error: " + e.getMessage());
                 return false;
             }
+            //instancio java.sql.date que é o tipo de data q entra no sql, boto o tempo da data anterior no construtor.
             java.sql.Date date = new java.sql.Date(date1.getTime());
+            //entrego data Java.sql.date para o parametro do registerNewTask.
             return TaskDAO.registerNewTask(title, description, date, userID);
     }
     

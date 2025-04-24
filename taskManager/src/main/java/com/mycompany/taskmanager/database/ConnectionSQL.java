@@ -45,7 +45,8 @@ public class ConnectionSQL {
                  + "date DATE,"
                  + "status ENUM('unfinished', 'finished') DEFAULT 'unfinished',"
                  + "userID INT,"
-                 + "FOREIGN KEY (userID) REFERENCES users(userID));";
+                 + "FOREIGN KEY (userID) REFERENCES users(userID) ON DELETE CASCADE ON UPDATE CASCADE)";
+                
          
         
         try(Statement stmt = con.createStatement()){

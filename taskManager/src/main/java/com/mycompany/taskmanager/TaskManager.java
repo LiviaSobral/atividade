@@ -13,10 +13,6 @@ import com.mycompany.taskmanager.view.UserLogin;
 public class TaskManager {
 
     public static void main(String[] args) {
-
-          new UserLogin().setVisible(true);
-        
-        
-        
+        new UserLogin().setVisible(true);   
     }
 }

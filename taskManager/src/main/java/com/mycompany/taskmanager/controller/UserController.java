@@ -19,9 +19,12 @@ public class UserController {
         User user = new User(name, email, password);
         if(UserDAO.registerUser(user)){            
         return user;
-        }else{
-            return null;
         }
+            
+        return null;
+        
+        
+        
     }
     public static User toEnter(String email, String name,  char[] charPassword){
         
